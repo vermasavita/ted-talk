@@ -98,7 +98,10 @@ export default function App() {
         ))}
       </div>
       <hr></hr>
-      <div>
+      <div style={{
+          textAlign: "left"
+        }}
+      >
         <ul
           style={{
             listStyle: "none",
