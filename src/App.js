@@ -5,51 +5,61 @@ const tedTalk = {
   Activism: [
     {
       name: "How to be a professional troublemaker",
-      creator: "Speaker: Luvvie Ajayi Jones"
+      creator: "Speaker: Luvvie Ajayi Jones",
+      rating: "4/5"
     },
     {
       name: "Love, sorrow and the emotions that power climate action",
-      creator: "Speaker: Knut Ivar Bjørlykhaug"
+      creator: "Speaker: Knut Ivar Bjørlykhaug",
+      rating: "4/5"
     },
     {
       name: "When the world is burning, is art a waste of time?",
-      creator: "Speaker: R. Alan Brooks"
+      creator: "Speaker: R. Alan Brooks",
+      rating: "5/5"
     }
   ],
 
   Addiction: [
     {
       name: "The past, present and future of nicotine addiction",
-      creator: " Speaker: Mitch Zeller"
+      creator: " Speaker: Mitch Zeller",
+      rating: "4/5"
     },
     {
       name: "How to fix a broken heart",
-      creator: "Speaker: Guy Winch"
+      creator: "Speaker: Guy Winch",
+      rating: "4.5/5"
     },
     {
       name: "Addiction is a disease. We should treat it like one",
-      creator: "Speaker: Michael Botticelli "
+      creator: "Speaker: Michael Botticelli ",
+      rating: "3/5"
     }
   ],
   Books: [
     {
       name: "The habits of happiness",
-      creator: "Speaker: Matthieu Ricard"
+      creator: "Speaker: Matthieu Ricard",
+      rating: "5/5"
     },
     {
       name: "We can be Buddhas",
-      creator: "Speaker: Robert Thurman"
+      creator: "Speaker: Robert Thurman",
+      rating: "3/5"
     }
   ],
 
   Curiosity: [
     {
       name: "Stumbling towards intimacy: An improvised TED Talk",
-      creator: "Speaker: Anthony Veneziale"
+      creator: "Speaker: Anthony Veneziale",
+      rating: "5/5"
     },
     {
       name: "Need a new idea? Start at the edge of what is known",
-      creator: "Speaker: Vittorio Loreto"
+      creator: "Speaker: Vittorio Loreto",
+      rating: "4/5"
     }
   ]
 };
@@ -92,22 +102,27 @@ export default function App() {
         <ul
           style={{
             listStyle: "none",
-            paddingInlineStart: "none"
+            paddingInlineStart: ""
           }}
         >
           {tedTalk[selectedCategory].map((ted) => (
-            <li key={ted.name}>
-              <div
-                style={{
-                  padding: "1rem"
-                }}
-              >
-                <strong> {ted.name}</strong>{" "}
-              </div>
-
+            <li
+              key={ted.name}
+              style={{
+                padding: "1rem",
+                border: "1px solid #D1D5DB",
+                width: "30rem",
+                margin: "1rem 3rem"
+              }}
+            >
+              <strong> {ted.name}</strong> <br></br>
               <small>
                 {" "}
                 <em> {ted.creator} </em>
+              </small>
+              <br></br>
+              <small>
+                Rating: <em> {ted.rating} </em>
               </small>
             </li>
           ))}
