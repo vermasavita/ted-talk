@@ -47,6 +47,11 @@ const tedTalk = {
       name: "We can be Buddhas",
       creator: "Speaker: Robert Thurman",
       rating: "3/5"
+    },
+    {
+      name: "How books can open your mind",
+      creator: "Speaker: Robert Thurman",
+      rating: "3/5"
     }
   ],
 
@@ -59,6 +64,11 @@ const tedTalk = {
     {
       name: "Need a new idea? Start at the edge of what is known",
       creator: "Speaker: Vittorio Loreto",
+      rating: "4/5"
+    },
+    {
+      name: "How to separate fact and fiction online",
+      creator: "Speaker: Markham Nolan",
       rating: "4/5"
     }
   ]
