@@ -75,7 +75,7 @@ const tedTalk = {
 };
 
 export default function App() {
-  var [selectedCategory, setSelectedCategory] = useState("Addiction");
+  var [selectedCategory, setSelectedCategory] = useState("Activism");
 
   function categoryClickHandler(category) {
     setSelectedCategory(category);
